@@ -6,16 +6,20 @@ import { AppComponent } from './app.component';
 import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BienvenidoComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],

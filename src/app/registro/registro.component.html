@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <form class="login">
+      <p class="title">Registro</p>
+      <input type="text" placeholder="Email" name="email" autofocus [(ngModel)]="email"/>
+      <i class="fa fa-user"></i>
+      <input type="password" placeholder="Contraseña" name="clave" [(ngModel)]="clave"/>
+      <i class="fa fa-key"></i>
+      <input type="password" placeholder="Repetir Contraseña" name="repetirClave" [(ngModel)]="repetirClave"/>
+      <i class="fa fa-key"></i>
+      <p routerLink="/login">Ya tienes cuenta?</p>
+      <button>
+        <i class="spinner"></i>
+        <span class="state" (click)="registro()">Crear cuenta</span>
+      </button>
+    </form>
+    <footer><a target="blank" href="http://boudra.me/">boudra.me</a></footer>
+  </div>
